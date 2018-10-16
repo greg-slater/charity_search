@@ -23,9 +23,9 @@ Conditions - final charities must have:
 
 -   Latest income data, with an income between £100,000 and £2,000,000
 
--   A ‘cause’ which is not in the following: ‘General charitable
-    > purposes’, ‘Religious activities’, ‘Amateur sport’, ‘Animals’ or
-    > ‘Armed forces/emergency service efficiency’
+-   A ‘cause’ which is not in the following:
+    > ‘General charitable purposes’, ‘Religious activities’, ‘Amateur sport’,
+    > ‘Animals’ or ‘Armed forces/emergency service efficiency’
 
 Limitations
 ===========
@@ -55,10 +55,11 @@ Files
 Root
 ----
 
-  **File Name**      **Description**
-  ------------------ ----------------------------------------------------------------------------------------------------------------------------------------
-  main.py            Main python script
-  charity\_env.yml   Environment description file which allows for easy installation of a python environment with the required packages on another machine.
+| **File Name** | **Description** |
+|---|---|
+| main.py | Main python script |
+| charity\_env.yml | Environment description file which allows for easy installation of a python environment with the required packages on another machine.|
+  
 
 Inputs
 ------
@@ -73,7 +74,7 @@ Inputs
   dkuk\_cause\_key.csv           Key which describes which charity causes to remove or prioritise. This can be updated if required. Causes with a priority of -1 will be removed, 0 treated no different, and 1 flagged as DKUK priority.
 
   tech\_keywords\_activity.csv   List of keywords to search for in the activity field. Any term with a 1 in the ‘remove’ column will be ignored. This has been kept in so that DKUK can avoid adding more words which have already been found to produce poor matches.
-                                 
+
                                  Negative terms can be added for each search term. This is so that, for example, the term ‘computer’ can be searched for but only returned as a positive match when it is found without any of the terms ‘education, history, club’ also present as these have been found to be poor matches. Any further negative terms should be added separated by commas in the ‘negative’ column. (Note - comma separation is not necessary in the ‘positive’ column as multi-word terms are searched for in that order).
 
   tech\_keywords\_360.csv        File in the same format as file above for grant keyword matching.
