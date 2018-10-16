@@ -1,0 +1,18 @@
+cause_id,cause,priority
+101,General charitable purposes,-1
+102,Education/training,0
+103,The advancement of health or saving of lives,0
+104,Disability,1
+105,The prevention or relief of poverty,1
+106,Overseas aid/famine relief,1
+107,Accommodation/housing,1
+108,Religious activities,-1
+109,Arts/culture/heritage/science,0
+110,Amateur sport,-1
+111,Animals,-1
+112,Environment/conservation/heritage,0
+113,Economic/community development/employment,0
+114,Armed forces/emergency service efficiency,-1
+115,Human rights/religious or racial harmony/equal...,1
+116,Recreation,0
+117,Other charitable purposes,0

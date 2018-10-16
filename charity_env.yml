@@ -1,0 +1,10 @@
+name: charity
+channels:
+  - r
+  - defaults
+  - conda-forge
+dependencies:
+  - bokeh
+  - pandas
+  - jsonlines
+  - nltk
