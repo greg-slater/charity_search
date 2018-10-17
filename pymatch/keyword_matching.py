@@ -220,7 +220,7 @@ def run():
     ch_match_long_out = ch_match_long.merge(ch_valid, left_index=True, right_index=True)
 
     #output
-    ch_match_long_out.to_csv('outputs/ch_activity_match_results_%s.csv' %today, index=False)
+    ch_match_long_out.to_csv('outputs/ch_activity_match_results_%s.csv' %today)
 
     ch_top_matches = ch_match_long.groupby(['activity_matched_words']).size().sort_values(ascending=True)
     # match_bar = ch_top_matches.plot.barh(figsize=(6,18))
@@ -239,7 +239,7 @@ def run():
     gr_match_long_out = gr_match_long.merge(grants, left_index=True, right_on='Identifier')
 
     # output
-    gr_match_long_out.to_csv('outputs/gr_desc_match_results%s.csv' %today, index=False)
+    gr_match_long_out.to_csv('outputs/gr_desc_match_results%s.csv' %today, index=false)
 
     ch_top_matches = gr_match_long.groupby(['grant_matched_words']).size().sort_values(ascending=True)
     # match_bar = ch_top_matches.plot.barh(figsize=(6,18))
